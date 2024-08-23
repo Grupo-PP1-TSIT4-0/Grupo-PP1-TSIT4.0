@@ -4,6 +4,7 @@ Repositorio del Grupo correspondiente a Practica Profesionalizante 1 de la carre
 
 
 <br>
+<br>
 
 <h1 align="center"> 
   👩‍💻👨🏼‍💻 Integrantes 👩‍💻👨🏼‍💻
@@ -57,7 +58,7 @@ Repositorio del Grupo correspondiente a Practica Profesionalizante 1 de la carre
           </thead>
           <tbody>
             <tr>
-              <td> José Emiliano ARCE </td>
+              <td> José Emiliano Arce </td>
               <td> emiliano1191 </td>
               <td>
                 <a href="https://github.com/emiliano1191">
@@ -71,7 +72,7 @@ Repositorio del Grupo correspondiente a Practica Profesionalizante 1 de la carre
               </td>
             </tr>
             <tr>
-              <td> Juan José ARATO </td>
+              <td> Juan José Arato </td>
               <td> juanjosearato </td>
               <td>
                 <a href="https://github.com/juanjosearato">
@@ -85,7 +86,7 @@ Repositorio del Grupo correspondiente a Practica Profesionalizante 1 de la carre
               </td>
             </tr>
             <tr>
-              <td> Mario Horacio PELLIZA </td>
+              <td> Mario Horacio Pelliza </td>
               <td> Mantras-45 </td>
               <td>
                 <a href="https://github.com/Mantras-45">
@@ -99,7 +100,7 @@ Repositorio del Grupo correspondiente a Practica Profesionalizante 1 de la carre
               </td>
             </tr>
             <tr>
-              <td> Violeta Evangelina MERCADO </td>
+              <td> Violeta Evangelina Mercado </td>
               <td> Ina45 </td>
               <td>
                 <a href="https://github.com/Ina45">
