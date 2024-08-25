@@ -1,16 +1,14 @@
-<h1 align="center">
-Grupo PP1 TSIT4.0
-</h1>
+<div align="center">
 
-### Repositorio del Grupo correspondiente a Practica Profesionalizante 1 de la carrera de Innovacion con Tecnologias 4.0
+<h1> Grupo PP1 TSIT4.0 </h1>
+
+### Repositorio del Grupo correspondiente a Practica Profesionalizante 1 de la carrera de Innovacion con Tecnologías 4.0
 
 
 
 <br>
 
-<h1 align="center"> 
-  👩‍💻👨🏼‍💻 Integrantes 👩‍💻👨🏼‍💻
-</h1>
+<h1> 👩‍💻👨🏼‍💻 Integrantes 👩‍💻👨🏼‍💻 </h1>
         <table align="center">
           <thead>
             <tr>
@@ -101,3 +99,5 @@ Grupo PP1 TSIT4.0
   </dd>
   <dd>
 <dl>
+
+</div>
