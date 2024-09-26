@@ -1,0 +1,75 @@
+## Configurar MQTT (Mosquitto)
+
+Este documento describe los pasos básicos para configurar un broker MQTT usando Mosquitto y crear un proyecto básico en PlatformIO para interactuar con él.
+
+**1. Descargar e instalar Mosquitto:**
+
+Los pasos para descargar e instalar Mosquitto varían según tu sistema operativo. 
+
+* **Linux:** Usa el administrador de paquetes de tu distribución (apt, yum, pacman, etc.). Por ejemplo, en Ubuntu/Debian:
+
+   ```bash
+   sudo apt update
+   sudo apt install mosquitto mosquitto-clients
+   ```
+
+* **Windows:** Descarga el instalador desde la página oficial de Mosquitto y sigue las instrucciones. 
+
+* **macOS:** Puedes usar Homebrew:
+
+   ```bash
+   brew install mosquitto
+   ```
+
+**2. Configurar el Listener de Mosquitto:**
+
+* **2.1. Ubicar archivo de configuración:** El archivo de configuración principal de Mosquitto suele ser `/etc/mosquitto/mosquitto.conf` (Linux) o `<ruta de instalación>\mosquitto.conf` (Windows).
+
+* **2.2. Editar archivo de configuración:** Abre el archivo `mosquitto.conf` con un editor de texto y asegúrate de que estas líneas estén descomentadas (sin "#" al principio) y configuradas como desees:
+
+   ```
+   #listener 1883 #Este Puerto es por Defecto
+   listener 8883 # Yo uso este Puerto
+   #allow_anonymous true  # Permitir conexiones anónimas (no recomendado para producción)
+   ```
+
+* **2.3. Iniciar Mosquitto:** 
+
+   * Puedes iniciar Mosquitto con la configuración por defecto:
+    
+     ```bash
+     mosquitto -v 
+     ```
+   
+   * O especificando el archivo de configuración:
+    
+     ```bash
+     mosquitto -c /etc/mosquitto/mosquitto.conf -v 
+     ```
+    
+   * El parámetro `-v` activa el modo verbose, mostrando información en la consola.
+
+**3. Crear un proyecto en PlatformIO:**
+
+* **3.1. Abrir Visual Studio Code:** Abre VSCode y asegúrate de tener la extensión PlatformIO instalada.
+
+* **3.2. Crear un nuevo proyecto:** 
+    * Haz clic en el icono de PlatformIO en la barra lateral.
+    * Selecciona "New Project".
+    * Elige un nombre para tu proyecto, la placa con la que trabajarás y el framework (como Arduino).
+    * Haz clic en "Finish".
+
+**4. Construir el proyecto:**
+
+* **4.1. Abrir el archivo `main.cpp`:** Este archivo se encuentra en la carpeta `src` de tu proyecto.
+
+* **4.2. Escribir el código:** Aquí es donde escribirás el código para conectar tu dispositivo al broker MQTT, suscribirse a topics y publicar mensajes. Necesitarás una librería MQTT para tu framework, como PubSubClient para Arduino.
+
+* **4.3. Construir el proyecto:** Haz clic en el icono de "Build" en la barra de estado de PlatformIO.
+
+**Pasos adicionales:**
+
+* **Configurar seguridad:** Para un entorno de producción, es crucial configurar la autenticación y el cifrado (TLS/SSL) en Mosquitto.
+* **Probar la conexión:** Puedes usar un cliente MQTT como MQTT Explorer o la línea de comandos (`mosquitto_sub`, `mosquitto_pub`) para probar la conexión y enviar/recibir mensajes.
+
+Este es un punto de partida básico. La configuración y el desarrollo de aplicaciones MQTT dependerán de tus necesidades específicas. 
