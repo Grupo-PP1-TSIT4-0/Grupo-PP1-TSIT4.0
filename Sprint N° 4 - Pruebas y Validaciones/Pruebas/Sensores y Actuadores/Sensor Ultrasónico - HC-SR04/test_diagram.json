@@ -1,0 +1,88 @@
+{
+    "tests": [
+        {
+            "description": "Check if the version is 1",
+            "assert": {
+                "path": "$.version",
+                "equals": 1
+            }
+        },
+        {
+            "description": "Check if the author is Juan Diego Gonzalez Antoniazzi",
+            "assert": {
+                "path": "$.author",
+                "equals": "Juan Diego Gonzalez Antoniazzi"
+            }
+        },
+        {
+            "description": "Check if the editor is wokwi",
+            "assert": {
+                "path": "$.editor",
+                "equals": "wokwi"
+            }
+        },
+        {
+            "description": "Check if there are 5 parts",
+            "assert": {
+                "path": "$.parts.length()",
+                "equals": 5
+            }
+        },
+        {
+            "description": "Check if the first part is board-esp32-devkit-c-v4",
+            "assert": {
+                "path": "$.parts[0].type",
+                "equals": "board-esp32-devkit-c-v4"
+            }
+        },
+        {
+            "description": "Check if the second part is wokwi-dht22",
+            "assert": {
+                "path": "$.parts[1].type",
+                "equals": "wokwi-dht22"
+            }
+        },
+        {
+            "description": "Check if the third part is wokwi-lcd2004",
+            "assert": {
+                "path": "$.parts[2].type",
+                "equals": "wokwi-lcd2004"
+            }
+        },
+        {
+            "description": "Check if the fourth part is wokwi-photoresistor-sensor",
+            "assert": {
+                "path": "$.parts[3].type",
+                "equals": "wokwi-photoresistor-sensor"
+            }
+        },
+        {
+            "description": "Check if the fifth part is wokwi-hc-sr04",
+            "assert": {
+                "path": "$.parts[4].type",
+                "equals": "wokwi-hc-sr04"
+            }
+        },
+        {
+            "description": "Check if there are 2 connections",
+            "assert": {
+                "path": "$.connections.length()",
+                "equals": 2
+            }
+        },
+        {
+            "description": "Check if the first connection is from esp:TX to $serialMonitor:RX",
+            "assert": {
+                "path": "$.connections[0]",
+                "equals": ["esp:TX", "$serialMonitor:RX", "", []]
+            }
+        },
+        {
+            "description": "Check if the second connection is from esp:RX to $serialMonitor:TX",
+            "assert": {
+                "path": "$.connections[1]",
+                "equals": ["esp:RX", "$serialMonitor:TX", "", []]
+            }
+        }
+    ]
+}

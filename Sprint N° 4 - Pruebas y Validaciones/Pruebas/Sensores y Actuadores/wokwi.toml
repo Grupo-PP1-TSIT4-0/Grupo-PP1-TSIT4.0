@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = '.pio\build\esp32-devkit\firmware.bin'
+elf = '.pio\build\esp32-devkit\firmware.elf'
+
+[mqtt]
+broker = "test.mosquitto.org"
+topics = ["deposito/humedad", "deposito/temperatura", "deposito/luz", "deposito/presionAtmosferica"]
