@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "author": "Juan Diego Gonzalez Antoniazzi",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": -633.6,
+      "left": -878.36,
+      "attrs": {}
+    },
+    { "type": "wokwi-dht22",
+      "id": "dht1", 
+      "top": -585.7, 
+      "left": -648.6, 
+      "attrs": {} 
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -281.4,
+      "left": -1012,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -553.8,
+      "left": -1208.8,
+      "attrs": {}
+    },
+    { "type": "wokwi-hc-sr04", 
+    "id": "ultrasonic1", 
+    "top": -891.3, 
+    "left": -896.9, 
+    "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ]
+  ],
+  "dependencies": {}
+}
