@@ -8,6 +8,12 @@
         {
             "name": "PlatformIO",
             "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/Conexiones",
+                "${workspaceFolder}/Sensores",
+                "${workspaceFolder}/lib",
+                "C:/Users/Juan Diego/Documents/PlatformIO/Projects/Prueba para el Equipo TSIT4.0/.pio/libdeps/esp32dev",
                 "c:/Users/Juan Diego/Documents/PlatformIO/Projects/Prueba para el Equipo TSIT4.0/include",
                 "c:/Users/Juan Diego/Documents/PlatformIO/Projects/Prueba para el Equipo TSIT4.0/src",
                 "C:/Users/Juan Diego/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src",
